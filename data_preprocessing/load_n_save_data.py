@@ -1,3 +1,11 @@
+"""
+This file creates a central .pkl file for facilitated handling (even though .pkl is not ideal).
+The individual files are being loaded from a central database. Please replace the conn parameter
+with the according path to your local files. 
+"""
+
+
+
 import pandas as pd
 
 from pickle import dump
@@ -5,11 +13,12 @@ from data_preprocessing.utils_data_handling import connect, load_select_pad
 
 
 # Connection parameters
+# Replace between "" accordingly (when working with a DB).
 param_dic = {
-    "host"      : "localhost",
-    "database"  : "sensordata",
-    "user"      : "postgres",
-    "password"  : "JNt8hSW4l+MJ]p;.g[WG"
+    "host"      : "",
+    "database"  : "",
+    "user"      : "",
+    "password"  : ""
 }
 
 #Connect to the database
