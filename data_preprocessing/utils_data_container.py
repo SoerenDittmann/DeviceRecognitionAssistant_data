@@ -1,3 +1,7 @@
+"""
+For the paper, only the first function is relevant
+"""
+
 import pandas as pd
 import numpy as np
 
